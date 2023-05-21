@@ -3,6 +3,7 @@ package com.example.FlipCommerce.Model;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import lombok.experimental.SuperBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,8 @@ import java.util.List;
 @AllArgsConstructor
 @Table(name = "seller")
 @FieldDefaults(level= AccessLevel.PRIVATE)
-@Builder
-// @SuperBuilder
+//@Builder
+@SuperBuilder
 public class Seller extends Person {
 
     // Navigational Properties

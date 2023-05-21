@@ -14,7 +14,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
-@Table(name = "table")
+@Table(name = "card")
 public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
