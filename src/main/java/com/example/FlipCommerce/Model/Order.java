@@ -1,6 +1,7 @@
 package com.example.FlipCommerce.Model;
 
 import com.example.FlipCommerce.Enums.CardType;
+import com.example.FlipCommerce.Enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -35,6 +36,13 @@ public class Order {
     @Column(name = "order_date")
     @CreationTimestamp
     Date orderDate;
+
+    @Column(name = "order_status",nullable = false)
+    @Enumerated(EnumType.STRING)
+    OrderStatus orderStatus;
+
+    @Column(name = "delivery_date",nullable = false)
+    Date deliveryDate;
 
     @Column(name = "card_used")
     String cardUsed;// it will be used to show the card number only last four digit
