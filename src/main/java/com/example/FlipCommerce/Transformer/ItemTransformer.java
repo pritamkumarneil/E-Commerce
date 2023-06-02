@@ -11,8 +11,7 @@ public class ItemTransformer {
     public static ItemResponseDto itemToItemResponseDto(Item item){
         return ItemResponseDto.builder()
                 .quantityAdded(item.getRequiredQuantity())
-                .productName(item.getProduct().getName())
-                .priceOfProduct(item.getProduct().getPrice())
+                .product(ProductTransfomer.productToPoductResponseDto(item.getProduct()))
                 .build();
     }
     public static Item createItem(int quantity){

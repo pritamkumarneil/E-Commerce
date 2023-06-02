@@ -28,6 +28,9 @@ public class Product {
     @Column(name = "price",nullable = false)
     Integer price;
 
+    @Column(name="discount")
+    Integer discount;
+
     @Column(name = "category")
     @Enumerated(EnumType.STRING)
     Category category;

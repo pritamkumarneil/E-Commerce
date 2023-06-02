@@ -1,7 +1,7 @@
 package com.example.FlipCommerce.Enums;
 
 public enum OrderStatus {
-    SUCCESS,
+    SUCCESSFUL,
     IN_PROGRESS,
     DELIVERD,
     FAILED

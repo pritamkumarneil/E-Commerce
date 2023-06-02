@@ -1,6 +1,5 @@
 package com.example.FlipCommerce.DTO.RequestDto;
 
-import com.example.FlipCommerce.Enums.Category;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -9,12 +8,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
-public class ProductRequestDto {
-    String sellerEmailId;
-    String name;
-    Category category;
-    int price;
-    int discount;
-    int quantity;
-
+public class OrderRequestDto {
+    String customerMail;
+    int productId;
+    int requiredQuantity;
+    String cardNo;
+    int cvv;
 }

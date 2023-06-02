@@ -19,7 +19,8 @@ public class Item {
 
     @Column(name = "required_quantity")
     int requiredQuantity;
-
+    @Column(name = "totalAmount")
+    int totalAmount;
     // navigational properties
     @ManyToOne
     @JoinColumn

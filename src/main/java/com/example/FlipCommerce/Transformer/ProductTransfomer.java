@@ -14,6 +14,7 @@ public class ProductTransfomer {
                 .price(productRequestDto.getPrice())
                 .quantity(productRequestDto.getQuantity())
                 .category(productRequestDto.getCategory())
+                .discount(productRequestDto.getDiscount())
                 .productStatus(ProductStatus.AVAILABLE)
                 .build();
     }
@@ -23,6 +24,7 @@ public class ProductTransfomer {
                 .category(product.getCategory())
                 .sellerName(product.getSeller().getName())
                 .price(product.getPrice())
+                .discount(product.getDiscount())
                 .productStatus(product.getProductStatus())
                 .build();
     }

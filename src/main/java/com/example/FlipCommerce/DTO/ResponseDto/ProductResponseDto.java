@@ -14,6 +14,7 @@ public class ProductResponseDto {
     String productName;
     String sellerName;
     int price;
+    int discount;
     Category category;
     ProductStatus productStatus;
 }
